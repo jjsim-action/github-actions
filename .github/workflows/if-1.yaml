@@ -9,10 +9,10 @@ jobs:
     if: github.event_name=='push'
     steps:
     - name: get event name
-      run: ech ${{github.event_name}}
+      run: echo ${{github.event_name}}
   job2:
     runs-on: ubuntu-latest
     if: github.event_name!='push'
     steps:
     - name: get event name
-      run: ech ${{github.event_name}}
+      run: echo ${{github.event_name}}
