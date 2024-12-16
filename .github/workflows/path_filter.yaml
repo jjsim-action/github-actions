@@ -3,7 +3,7 @@ on:
   push:
     branches: ["dev"]
     paths: 
-    - './github/workflows/part1/*'
+    - '.github/workflows/part1/*'
 jobs:
   branch-filter:
     runs-on: windows-latest
