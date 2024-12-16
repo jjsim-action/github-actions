@@ -31,5 +31,6 @@ jobs:
           $count++
           Start-Sleep -Seconds 1
         }
+      timeout-minutes: 1
     - name: echo
       run: echo hello
