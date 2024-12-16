@@ -8,3 +8,5 @@ jobs:
     steps:
     - name: echo
       run: echo hello
+    - name: runner check
+      run: echo '${{toJSON(runner)}}'
