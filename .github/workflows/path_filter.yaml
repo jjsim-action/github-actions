@@ -4,6 +4,7 @@ on:
     branches: ["dev"]
     paths: 
     - '.github/workflows/part1/*'
+    - '!.github/workflows/part1/push.yaml'
 jobs:
   branch-filter:
     runs-on: windows-latest
