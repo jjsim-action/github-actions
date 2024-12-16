@@ -1,0 +1,18 @@
+name: path_filter
+on: 
+  push:
+    branches: ["dev"]
+    paths: 
+    - './github/workflows/part1/*'
+jobs:
+  branch-filter:
+    runs-on: windows-latest
+    steps:
+    - name: echo hello
+      run: echo hello
+    - name: runner check
+      run: echo '${{toJSON(runner)}}'
+    - name: env check
+      run: echo '${{toJSON(env)}}'
+    - name: vars check
+      run: echo '${{toJSON(vars)}}'
