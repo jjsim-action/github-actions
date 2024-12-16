@@ -10,3 +10,7 @@ jobs:
       run: echo hello
     - name: runner check
       run: echo '${{toJSON(runner)}}'
+    - name: env check
+      run: echo '${{toJSON(env)}}'
+    - name: vars check
+      run: echo '${{toJSON(vars)}}'
