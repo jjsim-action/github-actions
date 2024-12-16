@@ -9,6 +9,6 @@ jobs:
       run: echo hello-world >hello.txt
     - name: upload artifact
       uses: actions/upload-artifact@v3
-        with:
-          name: artifact test
-          path: ./hello.txt
+      with:
+        name: artifact test
+        path: ./hello.txt
